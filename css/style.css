@@ -4,9 +4,10 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure {
 }
 
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: "Fauna One",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    color: #333;
+    /*font-family: "Fauna One",Helvetica,Arial,sans-serif;*/
+    font-family: "Merriweather",Helvetica,Arial,sans-serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
@@ -15,7 +16,8 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Playfair Display",Helvetica,Arial,sans-serif;
+    font-family: "Merriweather",Helvetica,Arial,sans-serif;
+
 }
 
 
@@ -27,7 +29,6 @@ header {
     /*background: #336699 url('../img/header.jpg');*/
     background-position: -100px -1200px;
     background-size: cover;
-    color: #fff;
     padding: 2em 1em;
     position: relative;
     overflow: hidden;
@@ -178,22 +179,25 @@ iframe {
 }
 
 a {
-    color: #acc2dd;
-    // -webkit-transition: all .2s ease-in-out;
-    // -o-transition: all .2s ease-in-out;
-    // transition: all .2s ease-in-out;
+    color: darkgray;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
     text-decoration: none;
     border-bottom: 1px solid rgba(255,21,181,1);
     border-bottom: 1px solid rgba(255,21,181,1);
+    opacity: 1;
 }
 
 a:hover {
-    color: #bbd3f0;
+    /*color: #bbd3f0;*/
+    opacity: .5;
 }
 
 a.section {
     border: 0;
 }
+
 
 blockquote {
     color: #8BB1B2;
@@ -566,4 +570,18 @@ hr:after {
   top: 100%;
   width: 0;
   border-top: 57.74px solid #64C7CC;
+}
+
+
+#byline {
+    font-size: 1.25em;
+}
+
+.textroller, #byline {
+    font-family: 'Inconsolata', monospace;
+}
+
+.textroller {
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }

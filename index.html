@@ -12,8 +12,10 @@
   <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Fauna+One|Oleo+Script|Fugaz+One|Monda|Unica+One|Alegreya:400italic,400|Abril+Fatface|Vollkorn' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Vast+Shadow|Oswald:300|Playfair+Display+SC' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/viewer.css">
+  <link rel="stylesheet" href="css/odometer-theme-minimal.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="canonical" href="http://david-crowley.com/">
 </head>
@@ -21,12 +23,6 @@
 
   <body>
 
-<!--     <header class="site-header">
-  <div class="wrapper">
-    <a class="site-title" href="/">David Crowley <span class="subtle">designer and human enthusiast</span></a>
-  </div>
-</header>
- -->
 
     <div class="page-content">
 
@@ -34,7 +30,12 @@
 
       <header class="post-header">
         <h1 class="post-title">David Crowley</h1>
-        <p class="subtle">Designer, coder, researcher <span class="amp">&amp;</span> human enthusiast</p>
+        <div id="byline">
+          <div id="do" class="textroller"></div>
+          <div id="what" class="textroller"></div>
+          <div id="who" class="textroller"></div>
+          <div id="when" class="textroller"></div>
+        </div>
       </header>
 
       <article class="post-content">
@@ -139,8 +140,53 @@
     </ul>
   </footer>
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script><!-- jQuery -->
-<script src="js/viewer.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script><!-- jQuery -->
+<script src="js/textroller.js"></script>
+
+<script>
+  var elt         = document.getElementById("do");
+  var texts       = ["Designer", "Researcher", "Builder"]
+  elt.textroller  = new TextRoller({
+      el: elt,
+      values: texts,    // an array of texts.     default : [el.innerHtml]
+      align: "left",    // right, left or middle. default : middle
+      delay: 5000,      // in milliseconds,       default : 5000
+      loop: true       // at the end, restart.   default : true
+  });
+</script>
+<script>
+  var elt         = document.getElementById("what");
+  var texts       = ["of interfaces", "of processes", "of objects"]
+  elt.textroller  = new TextRoller({
+      el: elt,
+      values: texts,    // an array of texts.     default : [el.innerHtml]
+      align: "left",    // right, left or middle. default : middle
+      delay: 10000,      // in milliseconds,       default : 5000
+      loop: true       // at the end, restart.   default : true
+  });
+</script>
+<script>
+  var elt         = document.getElementById("who");
+  var texts       = ["for humans", "for machines"]
+  elt.textroller  = new TextRoller({
+      el: elt,
+      values: texts,    // an array of texts.     default : [el.innerHtml]
+      align: "left",    // right, left or middle. default : middle
+      delay: 15000,      // in milliseconds,       default : 5000
+      loop: true       // at the end, restart.   default : true
+  });
+</script>
+<script>
+  var elt         = document.getElementById("when");
+  var texts       = ["of the present.", "of the future.", "of the past."]
+  elt.textroller  = new TextRoller({
+      el: elt,
+      values: texts,    // an array of texts.     default : [el.innerHtml]
+      align: "left",    // right, left or middle. default : middle
+      delay: 20000,      // in milliseconds,       default : 5000
+      loop: true       // at the end, restart.   default : true
+  });
+</script>
 
 
   </body>
