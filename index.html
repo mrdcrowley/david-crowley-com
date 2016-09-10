@@ -9,13 +9,13 @@
   <title>Work</title>
   <meta name="description" content="David Crowley's design work">
 
-  <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--   <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Fauna+One|Oleo+Script|Fugaz+One|Monda|Unica+One|Alegreya:400italic,400|Abril+Fatface|Vollkorn' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Vast+Shadow|Oswald:300|Playfair+Display+SC' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Vast+Shadow|Oswald:300|Playfair+Display+SC' rel='stylesheet' type='text/css'> -->
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/odometer-theme-minimal.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="canonical" href="http://david-crowley.com/">
 </head>
@@ -28,39 +28,80 @@
 
       <div class="post">
 
-      <header class="post-header">
+      <header>
         <h1 class="post-title">David Crowley</h1>
         <div id="byline">
-          <div id="do" class="textroller"></div>
-          <div id="what" class="textroller"></div>
-          <div id="who" class="textroller"></div>
-          <div id="when" class="textroller"></div>
+          <div>I am a</div>
+          <div class="tlt" id="tltDo">
+            <ul class="texts">
+                <li>designer</li>
+                <li>researcher</li>
+                <li>coder</li>
+            </ul>
+          </div>
+          <div>of</div>
+          <div class="tlt" id="tltWhat">
+            <ul class="texts">
+                <li>interfaces</li>
+                <li>processes</li>
+                <li>objects</li>
+            </ul>
+          </div>
+          <div>for</div>
+          <div class="tlt" id="tltWho">
+            <ul class="texts">
+                <li>humans.</li>
+                <li>machines.</li>
+            </ul>
+          </div>
+<!--           <div class="tlt" id="tltWhen">
+            <ul class="texts">
+                <li>of the present</li>
+                <li>of the past</li>
+                <li>of the future</li>
+            </ul>
+          </div> -->
         </div>
       </header>
 
-      <article class="post-content">
-
-        <h2>Selected work</h2>
-
+      <article>
+        <h2>Interfaces</h2>
         <a class="section" href="sprout.html" id="project-sprout">
             <span class="hexagon"><h3>HP Sprout</h3><h4>A new form of computing</h4></span>
         </a>
+        <a class="section" href="telletopia.html" id="project-telletopia">
+            <span class="hexagon"><h3>Telletopia TV</h3><h4>Streaming television for mobile</h4></span>
+        </a>
+        <a class="section" href="" id="project-">
+            <span class="hexagon"><h3>Intranet</h3><h4>U-Haul's internal tools</h4></span>
+        </a>
+      </article>
+
+      <article>
+        <h2>Process</h2>
         <a class="section"href="intranet.html" id="project-uhaul">
             <span class="hexagon"><h3>Intranet</h3><h4>Helping people get things done</h4></span>
         </a>
         <a class="section" href="companion.html" id="project-companion">
             <span class="hexagon"><h3>Move companion</h3><h4>Making journeys better</h4></span>
         </a>
-<!--         <section id="project-hardware">
-            <a href="hardware.html" class="hexagon"><h3>Experiments</h3><h4>Always learning</h4></a>
-        </section> -->
+      </article>
 
-<hr />
+      <article>
+        <h2>Objects</h2>
+        <a class="section" href="" id="project-">
+            <span class="hexagon"><h3>BART Map</h3><h4></h4></span>
+        </a>
+        <a class="section"href="intranet.html" id="project-">
+            <span class="hexagon"><h3>Useless Machine</h3><h4></h4></span>
+        </a>
+      </article>
+
+      <article class="post-content">
 
         <h2>More work</h2>
 
-         <h2 id=""><a href="ixonos.html">Ixonos</a></h2>
-    <!-- <p>As one of the very first people to join the new team in San Francisco a few years ago, I've enjoyed growing with Ixonos and creating new and interesting digital experiences.</p> -->
+         <h3 id=""><a href="ixonos.html">Ixonos</a></h3>
     <ul>
       <li>Designed and developed a <a href="sprout.html"‎>new form of computing</a>,  <a href="http://medium.com/@criscristina/the-slightly-smarter-office-80baa8ddb440#.nxmkrfx5u">smart office</a>, <a href="http://telletopia.org/">streaming television app</a> and <a href="https://www.youtube.com/watch?v=vhOPtOwev3I">location-aware retail shopping app</a>.</li>
       <li>Designed and prototyped VR and AR apps that utilized gestures and motion controls.</li>
@@ -70,44 +111,37 @@
 
     <hr />
 
-<h2 id=""><a href="seabourne.html">Seabourne</a></h2>
+  <h3 id=""><a href="seabourne.html">Seabourne</a></h3>
+  <ul>
+    <li>Designed and developed sites and apps for desktops, mobiles and tablets.</li>
+    <li>Automated tests using Python and Selenium.</li>
+    <li>Recorded tutorials for developers.</li>
+    <li>Developed jQuery plugins.</li>
+  </ul>
 
-<!-- <p>A small team who worked remotely, we worked on many government sponsored projects.</p> -->
+      <hr />
 
-<ul>
-  <li>Designed and developed sites and apps for desktops, mobiles and tablets.</li>
-  <li>Automated tests using Python and Selenium.</li>
-  <li>Recorded tutorials for developers.</li>
-  <li>Developed jQuery plugins.</li>
-</ul>
+  <h3 id=""><a href="uhaul.html">U-Haul</a></h3>
+  <ul>
+    <li>Designed and developed sites, intranets, mobile apps, point of sale terminals and kiosks.</li>
+    <li>Built and fostered a design team that is dedicated to users and backed up by researching customers and employees using location visits, user shadowing, customer calls, usability tests, user interviews and session logs.</li>
+  </ul>
 
-    <hr />
+  <hr />
 
-<h2 id=""><a href="uhaul.html">U-Haul</a></h2>
+  <h3><a href="https://www.youtube.com/watch?v=k3xFX3sR0iE">The Ultimate Machine (Arduino)</a></h3>
+  <ul>
+    <li><p>Heavily inspired by information theorist Claude Shannon, who built the <a href="http://kk.org/thetechnium/the-unspeakable/">original Ultimate/Useless machine</a>, it's a machine that turns itself off.</p>
+    <iframe src="https://www.youtube.com/embed/k3xFX3sR0iE" frameborder="0" allowfullscreen></iframe>
+    </li>
+  </ul>
+  <h3><a href="https://github.com/mrdcrowley/bart">BART Map (Raspberry Pi)</a></h3>
+  <ul>
+    <li>A woodcut map of BART hooked up to a Raspberry Pi that lights up stations when a train is about to leave.</li>
+    <li><img src="img/thumb-hardware.jpg" /></li>
+  </ul>
 
-<!-- <p>This is where design turned from making things pretty in Photoshop to serving real human needs. More than a few of my days as a designer were spent &quot;in the field&quot; helping customers and shadowing employees so that when we were designing tools and processes, we actually understood them as they really were, not as someone else had told us.</p> -->
-
-<ul>
-  <li>Designed and developed sites, intranets, mobile apps, point of sale terminals and kiosks.</li>
-  <li>Built and fostered a design team that is dedicated to users and backed up by researching customers and employees using location visits, user shadowing, customer calls, usability tests, user interviews and session logs.</li>
-</ul>
-
-<hr />
-
-<h2 id="">Personal projects</h2>
-<h2><a href="https://www.youtube.com/watch?v=k3xFX3sR0iE">The Ultimate Machine (Arduino)</a></h2>
-<ul>
-  <li><p>Heavily inspired by information theorist Claude Shannon, who built the <a href="http://kk.org/thetechnium/the-unspeakable/">original Ultimate/Useless machine</a>, it's a machine that turns itself off.</p>
-  <iframe src="https://www.youtube.com/embed/k3xFX3sR0iE" frameborder="0" allowfullscreen></iframe>
-  </li>
-</ul>
-<h2><a href="https://github.com/mrdcrowley/bart">BART Map (Raspberry Pi)</a></h2>
-<ul>
-  <li>A woodcut map of BART hooked up to a Raspberry Pi that lights up stations when a train is about to leave.</li>
-  <li><img src="img/thumb-hardware.jpg" /></li>
-</ul>
-
-<hr />
+  <hr />
 
       </article>
 
@@ -141,7 +175,131 @@
   </footer>
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script><!-- jQuery -->
-<script src="js/textroller.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.lettering.js"></script>
+
+
+<script>
+
+  $('#tltDo').textillate({
+    selector: '.texts',
+    loop: true,
+    minDisplayTime: 4000,
+    initialDelay: 0,
+    autoStart: true,
+    inEffects: [ 'bounceInUp' ],
+    outEffects: [ 'bounceOutUp' ],
+    in: {
+      effect: 'bounceInUp',
+      // delayScale: 1.5,
+      // delay: 50,
+      sync: true,
+      shuffle: false,
+      reverse: false,
+      callback: function () {}
+    },
+    out: {
+      effect: 'bounceOutUp',
+      // delayScale: 1.5,
+      // delay: 50,
+      sync: true,
+      shuffle: false,
+      reverse: false,
+      callback: function () {}
+    },
+    type: 'word'
+  });
+
+  $('#tltWhat').textillate({
+    selector: '.texts',
+    loop: true,
+    minDisplayTime: 8000,
+    initialDelay: 0,
+    autoStart: true,
+    inEffects: [ 'bounceInUp' ],
+    outEffects: [ 'bounceOutUp' ],
+    in: {
+      effect: 'bounceInUp',
+      // delayScale: 1.5,
+      // delay: 50,
+      sync: true,
+      shuffle: false,
+      reverse: false,
+      callback: function () {}
+    },
+    out: {
+      effect: 'bounceOutUp',
+      // delayScale: 1.5,
+      // delay: 50,
+      sync: true,
+      shuffle: false,
+      reverse: false,
+      callback: function () {}
+    },
+    type: 'word'
+  });
+
+  $('#tltWho').textillate({
+    selector: '.texts',
+    loop: true,
+    minDisplayTime: 12000,
+    initialDelay: 0,
+    autoStart: true,
+    inEffects: [ 'bounceInUp' ],
+    outEffects: [ 'bounceOutUp' ],
+    in: {
+      effect: 'bounceInUp',
+      // delayScale: 1.5,
+      // delay: 50,
+      sync: true,
+      shuffle: false,
+      reverse: false,
+      callback: function () {}
+    },
+    out: {
+      effect: 'bounceOutUp',
+      // delayScale: 1.5,
+      // delay: 50,
+      sync: true,
+      shuffle: false,
+      reverse: false,
+      callback: function () {}
+    },
+    type: 'word'
+  });
+
+  $('#tltWhen').textillate({
+    selector: '.texts',
+    loop: true,
+    minDisplayTime: 16000,
+    initialDelay: 0,
+    autoStart: true,
+    inEffects: [ 'bounceInUp' ],
+    outEffects: [ 'bounceOutUp' ],
+    in: {
+      effect: 'bounceInUp',
+      // delayScale: 1.5,
+      // delay: 50,
+      sync: true,
+      shuffle: false,
+      reverse: false,
+      callback: function () {}
+    },
+    out: {
+      effect: 'bounceOutUp',
+      // delayScale: 1.5,
+      // delay: 50,
+      sync: true,
+      shuffle: false,
+      reverse: false,
+      callback: function () {}
+    },
+    type: 'word'
+  });
+
+</script>
+<!--
 
 <script>
   var elt         = document.getElementById("do");
@@ -188,7 +346,7 @@
   });
 </script>
 
-
+ -->
   </body>
 
 </html>

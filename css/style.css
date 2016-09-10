@@ -8,6 +8,7 @@ body {
     color: #333;
     /*font-family: "Fauna One",Helvetica,Arial,sans-serif;*/
     font-family: "Merriweather",Helvetica,Arial,sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
@@ -33,15 +34,6 @@ header {
     position: relative;
     overflow: hidden;
     text-align: center;
-}
-
-header img {
-    position: absolute;
-    height: 100%;
-    -webkit-filter: opacity(30%);
-    left: 0;
-    top: 0;
-    display: none;
 }
 
 hr {
@@ -130,7 +122,6 @@ a h4 {
 }
 
 h2,h3,h4 {
-    color: #fff;
     font-weight: 700;
 }
 
@@ -381,12 +372,12 @@ header,article,.posts {
     padding-left: 30px;
 }
 
-header,.posts {
+/*header,.posts {
     text-align: center;
     margin-bottom: 60px;
     max-width: -webkit-calc(1280px - (30px * 2));
     max-width: calc(1280px - (30px * 2));
-}
+}*/
 
 article {
     max-width: -webkit-calc(800px - (30px * 2));
@@ -407,7 +398,7 @@ footer p {
 
 @media screen and (max-width: 1000px) {
     header,article {
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
     }
 
     footer {
@@ -491,18 +482,17 @@ hr:after {
     position: relative;
 }
 
+#project-companion {
+    background-image: url('../img/thumb-companion.jpg');
+}
 #project-sprout {
     background-image: url('http://static.businessinsider.com/image/5451249deab8ea884147b0ff/image.gif');
 }
 #project-uhaul {
     background-image: url('../img/thumb-uhaul.jpg');
 }
-#project-companion {
-    background-image: url('../img/thumb-companion.jpg');
-}
-#project-hardware {
-    /*background-image: url('http://i.giphy.com/kHgpTBmy02HzG.gif');*/
-    background-image: url('../img/thumb-hardware.jpg');
+#project-telletopia {
+    background-image: url('../img/telletopia.gif');
 }
 
 .section:before {
@@ -542,9 +532,9 @@ hr:after {
 }
 
 .hexagon h4 {
-    border-bottom: 1px solid rgba(255,255,255,.5);
+    /*border-bottom: 1px solid rgba(255,255,255,.5);*/
     color: #fff;
-    font-family: "Fauna One";
+    font-family: "Inconsolata";
     margin-left: -50px;
     padding-bottom: .5em;
     padding-top: 110px;
@@ -575,13 +565,28 @@ hr:after {
 
 #byline {
     font-size: 1.25em;
+    margin: auto;
+    margin-bottom: 5em;
+    margin-top: 2.5em;
+    text-align: center;
+    width: 25em;
 }
 
-.textroller, #byline {
+#byline div {
+    float: left;
+    margin: 0 .25em;
+}
+
+.texts, #byline {
     font-family: 'Inconsolata', monospace;
 }
 
-.textroller {
-    font-weight: bold;
+.texts {
+}
+
+.tlt {
     border-bottom: 1px solid rgba(0,0,0,.1);
+    font-weight: bold;
+    text-align: left;
+    width: 5em;
 }
