@@ -7,7 +7,7 @@ body {
     background-color: #fff;
     color: #333;
     /*font-family: "Fauna One",Helvetica,Arial,sans-serif;*/
-    font-family: "Merriweather",Helvetica,Arial,sans-serif;
+    /*font-family: "Merriweather",Helvetica,Arial,sans-serif;*/
     font-family: 'Inconsolata', monospace;
     font-size: 18px;
     line-height: 1.5;
@@ -66,11 +66,14 @@ table {
 
 ul,ol {
     margin-left: 0;
-    list-style: none;
+    list-style: circle;
+    list-style-position: inside;
+
 }
 
 li {
     margin-bottom: 1em;
+    margin-left: 0em;
 }
 
 h1 {
@@ -78,11 +81,17 @@ h1 {
 }
 
 h2 {
+    background: rgba(0,0,0,1);
+    color: #fff;
+    font-family: 'Inconsolata';
     font-size: 48px;
+    margin: 0;
+    padding: .5em;
 }
 
 h3 {
     font-size: 32px;
+    text-align: center;
 }
 
 h4 {
@@ -101,7 +110,6 @@ h1 {
 h2 {
     font-size: 32px;
     font-weight: 300;
-    text-align: center;
 }
 
 h3 {
@@ -110,11 +118,20 @@ h3 {
 }
 
 h4 {
-    background: rgba(255,255,255,.5);
-    display: inline-block;
+    background: rgba(0,0,0,.025);
+    display: block;
     font-size: 18px;
+    margin: 0;
     margin-bottom: 1em;
     padding: .5em;
+    background: rgba(0,0,0,1);
+    color: #fff;
+    font-family: 'Inconsolata';
+    text-transform: uppercase;
+}
+
+h4 a {
+    color: #fff;
 }
 
 a h4 {
@@ -128,25 +145,6 @@ h2,h3,h4 {
 h2 span {
     font-style: italic;
 }
-
-        h1 {
-            font-size: 48px;
-            font-weight: 200;
-        }
-
-        h2 {
-            font-size: 32px;
-            font-weight: 300;
-        }
-
-        h3 {
-            font-size: 24px;
-            font-weight: 300;
-        }
-
-        h4 {
-            font-size: 18px;
-        }
 
 .amp {
     font-family: "Droid Serif";
@@ -170,19 +168,19 @@ iframe {
 }
 
 a {
-    color: darkgray;
+    color: #333;
+    font-weight: bold;
+    opacity: 1;
+    text-decoration: underline;
     -webkit-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255,21,181,1);
-    border-bottom: 1px solid rgba(255,21,181,1);
-    opacity: 1;
+
 }
 
 a:hover {
     /*color: #bbd3f0;*/
-    opacity: .5;
+    /*opacity: .5;*/
 }
 
 a.section {
@@ -380,9 +378,26 @@ header,article,.posts {
 }*/
 
 article {
+/*    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - (30px * 2));*/
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+article.small {
+    margin: auto;
     max-width: -webkit-calc(800px - (30px * 2));
     max-width: calc(800px - (30px * 2));
-    margin-bottom: 120px;
+}
+
+article li {
+    background: yellow;
+    padding: .5em 1em;
+}
+
+article#jobs {
+    margin-top: 5em;
 }
 
 footer {
@@ -477,91 +492,80 @@ hr:after {
     background-size: cover;
     cursor: pointer;
     display: block;
-    min-height: 400px;
-    margin-bottom: 1em;
+    float: left;
+    min-height: 300px;
+    outline: 1px solid rgba(0,0,0,.075);
+    overflow: hidden;
     position: relative;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    width: 50%;
 }
 
+#interfaces .section {
+    width: 33.33333%;
+}
+
+.section h3 {
+    font-family: 'Inconsolata';
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.section h4 {
+    font-family: "Inconsolata";
+    margin: 0;
+    padding: 0;
+}
+
+.section h4 {
+    color: #000;
+}
+
+.section .hexagon {
+    background: rgba(255,255,0,.9);
+    bottom: 0;
+    color: rgba(0,0,0,1);
+    display: block;
+    height: auto;
+    left: 0;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.section:hover .hexagon {
+    height: 0;
+    bottom: -2em;
+}
+
+#project-bart {
+    background-image: url('../img/thumb-hardware.jpg');
+}
 #project-companion {
     background-image: url('../img/thumb-companion.jpg');
+}
+#project-intranet {
+    background-image: url('../img/tools_desktop.jpg');
+}
+#project-machine {
+    background-image: url('http://i.giphy.com/kHgpTBmy02HzG.gif');
+    background-size: contain;
 }
 #project-sprout {
     background-image: url('http://static.businessinsider.com/image/5451249deab8ea884147b0ff/image.gif');
 }
-#project-uhaul {
-    background-image: url('../img/thumb-uhaul.jpg');
-}
 #project-telletopia {
     background-image: url('../img/telletopia.gif');
 }
-
-.section:before {
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    background: rgba(0,0,0,.5);
-    transition: background .25s ease-in;
+#project-uhaul {
+    background-image: url('../img/thumb-uhaul.jpg');
 }
-
-.section:hover:before {
-    background: rgba(0,0,0,0);
-}
-
-.hexagon {
-    background-color: #64C7CC;
-    display: block;
-    left: 270px;
-    position: absolute;
-    top: 42.5px;
-    transition: opacity .15s ease-in;
-
-    width: 200px;
-    height: 115.47px;
-    margin: 57.74px 0;
-}
-
-.section:hover .hexagon {
-    opacity: 0;
-}
-
-.hexagon h3 {
-    color: #fff;
-    padding-top: 38px;
-    text-align: center;
-}
-
-.hexagon h4 {
-    /*border-bottom: 1px solid rgba(255,255,255,.5);*/
-    color: #fff;
-    font-family: "Inconsolata";
-    margin-left: -50px;
-    padding-bottom: .5em;
-    padding-top: 110px;
-    text-align: center;
-    width: 300px;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 57.74px solid #64C7CC;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 57.74px solid #64C7CC;
-}
-
 
 #byline {
     font-size: 1.25em;
@@ -569,7 +573,7 @@ hr:after {
     margin-bottom: 5em;
     margin-top: 2.5em;
     text-align: center;
-    width: 25em;
+    width: 21em;
 }
 
 #byline div {
